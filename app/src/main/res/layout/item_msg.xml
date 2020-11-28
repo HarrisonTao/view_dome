@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/cm_height_12"
+    android:layout_marginRight="@dimen/cm_height_12"
+    android:layout_marginLeft="@dimen/cm_height_12"
+    >
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/font_ff99"
+        android:textSize="12sp"
+        android:layout_marginBottom="@dimen/cm_height_18"
+        android:paddingLeft="@dimen/cm_height_10"
+        android:paddingRight="@dimen/cm_height_10"
+        android:paddingBottom="@dimen/cm_height_5"
+        android:paddingTop="@dimen/cm_height_5"
+        android:background="@drawable/message_date_shep"
+        />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_shape"
+        >
+
+        <ImageView
+            android:id="@+id/iv_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/cm_height_12"
+            android:src="@mipmap/gonggao"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/cm_height_15"
+            android:layout_marginBottom="@dimen/cm_height_11"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统公告"
+            android:textColor="@color/black"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/cm_height_12"
+            android:layout_toRightOf="@+id/iv_sign"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看详情"
+            android:textColor="@color/font_88"
+            android:padding="@dimen/cm_height_12"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/linksView"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/font_88"
+            android:layout_below="@+id/iv_sign"
+            android:layout_marginLeft="@dimen/cm_height_18"
+            android:layout_marginRight="@dimen/cm_height_18"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:padding="@dimen/cm_height_12"
+            android:textSize="15sp"
+            android:layout_below="@+id/linksView"
+            android:layout_marginTop="@dimen/cm_height_15"
+            />
+
+
+        <TextView
+            android:layout_marginRight="@dimen/cm_height_10"
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/cm_height_12"
+            android:layout_marginTop="@dimen/cm_height_2"
+            android:layout_marginBottom="@dimen/cm_height_11"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/font_ff66"
+            android:textSize="13sp"
+            android:layout_below="@+id/tv_title"
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/cm_height_12"
+        android:layout_marginRight="@dimen/cm_height_12"
+        android:background="@color/bg_color"
+        android:visibility="gone" />
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.MZCretin:AutoUpdateProject:2.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a65c2934309a495d91f412f84afee61c/jetified-AutoUpdateProject-2.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a65c2934309a495d91f412f84afee61c/jetified-AutoUpdateProject-2.0.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.MZCretin/AutoUpdateProject/2.0.0/477fec5b362862195d94087cb44952087fd23e2e/AutoUpdateProject-2.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.MZCretin/AutoUpdateProject/2.0.0/43d5cf48b8794d2c3bcba86004088f917ee629f7/AutoUpdateProject-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_marginTop="@dimen/cm_height_100"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll_header_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/cm_height_10"
+            android:background="@drawable/putong_bg2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/cm_height_5"
+                android:layout_marginRight="@dimen/cm_height_5"
+                android:padding="@dimen/cm_height_7"
+                android:src="@mipmap/ic_wenz" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_vip_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/tv_vip_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/cm_height_10"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rl_scale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/cm_height_30"
+                android:layout_marginTop="@dimen/cm_height_30"
+                android:layout_marginRight="@dimen/cm_height_30"
+                >
+
+                <TextView
+                    android:id="@+id/tv_strat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/color_white" />
+
+                <com.dykj.youfeng.view.ProgressBarView
+
+                    android:id="@+id/progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cm_height_30"
+                    android:layout_marginRight="@dimen/cm_height_30"
+                    app:progress_reach_color="@color/main_color_e0"
+                    app:progress_text_color="@color/color_white"
+                    app:progress_unreach_color="@color/color_white" />
+
+                <TextView
+                    android:id="@+id/tv_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="24"
+                    android:textColor="@color/color_white" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_vip_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/cm_height_20"
+                android:text=""
+                android:textColor="#C6D2FF"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_dredge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-30dp"
+            android:background="@drawable/bg_deep_shap_radius_17"
+            android:gravity="center"
+            android:minWidth="150dp"
+            android:minHeight="@dimen/cm_height_35"
+            android:padding="@dimen/cm_height_5"
+            android:text="立即开通"
+            android:textColor="#EF5B25"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/cm_height_20"
+            android:layout_marginBottom="@dimen/cm_height_20"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_fl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_feil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/ic_feil"
+                    android:drawablePadding="@dimen/cm_height_5"
+                    android:gravity="center"
+                    android:text="还款费率"
+                    android:textColor="@color/font_ff33"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_feil"
+                    android:gravity="center"
+                    android:text="还款费率更低"
+                    android:textColor="@color/font_ff99"
+                    android:textSize="10sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_feny"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_feiy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/ic_feny"
+                    android:drawablePadding="@dimen/cm_height_5"
+                    android:gravity="center"
+                    android:text="团队分佣"
+                    android:textColor="@color/font_ff33"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_feiy"
+                    android:gravity="center"
+                    android:text="享受更多分佣"
+                    android:textColor="@color/font_ff99"
+                    android:textSize="10sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_jl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_jiangl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/ic_jiangl"
+                    android:drawablePadding="@dimen/cm_height_5"
+                    android:gravity="center"
+                    android:text="积分奖励"
+                    android:textColor="@color/font_ff33"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_jiangl"
+                    android:gravity="center"
+                    android:text="积分可抵用现金"
+                    android:textColor="@color/font_ff99"
+                    android:textSize="10sp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cm_height_10"
+            android:background="@color/bg_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/cm_height_15">
+
+            <View
+                android:layout_width="25dp"
+                android:layout_height="3dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/cm_height_10"
+                android:layout_toLeftOf="@id/tv_vip_grade_type"
+                android:background="@color/font_ff33" />
+
+
+            <View
+                android:layout_width="25dp"
+                android:layout_height="3dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/cm_height_10"
+                android:layout_toRightOf="@id/tv_vip_grade_type"
+                android:background="@color/font_ff33" />
+
+
+            <TextView
+                android:id="@+id/tv_vip_grade_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="会员等级"
+                android:textColor="@color/font_ff33"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/vip_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+
+
+</FrameLayout>

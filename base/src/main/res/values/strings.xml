@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyBase</string>
+    <string name="permission_rationale_message">您拒绝了我们的授权申请，请您同意授权，否则该功能将无法正常使用！!</string>
+    <string name="permission_denied_forever_message">我们需要您拒绝的一些权限或系统应用失败，请手动设置为页面授权，否则该功能无法正常使用！</string>
+    <string name="loading_tip_word">正在加载</string>
+</resources>

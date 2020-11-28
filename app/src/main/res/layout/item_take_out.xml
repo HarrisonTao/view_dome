@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_margin="@dimen/cm_height_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/tixina_bg">
+
+
+        <TextView
+            android:layout_marginLeft="@dimen/cm_height_20"
+            android:layout_marginTop="@dimen/cm_height_15"
+            android:id="@+id/tv_bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国银行"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/cm_height_10"
+            android:layout_marginLeft="@dimen/cm_height_20"
+            android:layout_below="@id/tv_bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6222 **** **** 8888"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:layout_marginRight="@dimen/cm_height_20"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="储蓄卡"
+            android:textColor="#C4D1FF"
+            android:textSize="12sp"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

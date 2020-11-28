@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/cm_height_10"
+    android:background="@mipmap/putong_bg"
+    android:id="@+id/rl_bg">
+
+    <TextView
+        android:id="@+id/tv_vip_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/cm_height_15"
+        android:text="普通会员"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_vip_grade"
+        android:layout_marginLeft="@dimen/cm_height_30"
+        android:layout_marginTop="@dimen/cm_height_5"
+        android:text="￥198元升级"
+        android:textColor="@color/white" />
+
+
+    <TextView
+        android:id="@+id/tv_repayment_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_info"
+        android:layout_marginLeft="@dimen/cm_height_30"
+        android:layout_marginTop="@dimen/cm_height_17"
+        android:drawableLeft="@drawable/circle_shape_color_white"
+        android:drawablePadding="@dimen/cm_height_4"
+        android:text="智能还款费率：小额 万70+1，大额 80+1"
+        android:textColor="@color/white"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_sk_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_repayment_fl"
+        android:layout_marginLeft="@dimen/cm_height_30"
+        android:layout_marginTop="@dimen/cm_height_10"
+        android:drawableLeft="@drawable/circle_shape_color_white"
+        android:drawablePadding="@dimen/cm_height_4"
+        android:text="快捷收款费率：小额 万55+2"
+        android:textColor="@color/white"
+        android:textSize="11sp" />
+
+
+</RelativeLayout>

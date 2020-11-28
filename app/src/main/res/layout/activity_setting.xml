@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/cm_height_13"
+        android:layout_marginRight="@dimen/cm_height_13"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/tv_change_phone_Relative"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cm_height_65">
+
+            <ImageView
+                android:id="@+id/phoneImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/phone"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                />
+
+        <TextView
+            android:id="@+id/tv_change_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/phoneImage"
+            android:text="登录账号"
+            android:textColor="@color/font_ff33"
+            android:textSize="15sp"
+            android:layout_above="@+id/lineView"
+            android:layout_marginLeft="@dimen/cm_height_18"
+            />
+
+            <View
+                android:id="@+id/lineView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cm_height_8"
+                android:layout_centerVertical="true"
+
+                android:layout_toRightOf="@+id/phoneImage"
+                />
+
+            <TextView
+                android:id="@+id/phoneText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/phoneImage"
+                android:gravity="center_vertical"
+
+                android:textColor="@color/color_A4A5"
+                android:textSize="15sp"
+                android:layout_below="@+id/lineView"
+                android:layout_marginLeft="@dimen/cm_height_18"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:drawableRight="@mipmap/btn_jtou"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:text="更换"
+                android:textColor="@color/color_A4A5"
+                android:textSize="15sp"
+
+                />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/tv_change_psw_relative"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cm_height_65">
+
+            <ImageView
+                android:id="@+id/pswImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/mima"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_change_psw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/pswImage"
+                android:text="账号密码"
+                android:textColor="@color/font_ff33"
+                android:textSize="15sp"
+                android:layout_above="@+id/lineView2"
+                android:layout_marginLeft="@dimen/cm_height_18"
+                />
+
+            <View
+                android:id="@+id/lineView2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cm_height_8"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/pswImage"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/pswImage"
+                android:gravity="center_vertical"
+                android:text="修改账号登录密码"
+                android:textColor="@color/color_A4A5"
+                android:textSize="15sp"
+                android:layout_below="@+id/lineView2"
+                android:layout_marginLeft="@dimen/cm_height_18"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:drawableRight="@mipmap/btn_jtou"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:text="更换"
+                android:textColor="@color/color_A4A5"
+                android:textSize="15sp"
+
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_deal_psw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cm_height_50"
+            android:layout_gravity="center"
+            android:drawableRight="@mipmap/ic_jiant"
+            android:gravity="center_vertical"
+            android:text="交易密码"
+            android:textColor="@color/font_ff33"
+            android:textSize="15sp"
+            android:visibility="gone"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/cm_height_13"
+        android:layout_marginRight="@dimen/cm_height_13"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/rl_kf_call"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cm_height_50"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客服电话"
+                android:textColor="@color/font_ff33"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_call_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@mipmap/ic_jiant"
+                android:drawablePadding="@dimen/cm_height_15"
+                android:textColor="@color/font_ff99"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <View style="@style/line_horizontal_1" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_clear_cache"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cm_height_50"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清除缓存"
+                android:textColor="@color/font_ff33"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@mipmap/ic_jiant"
+                android:drawablePadding="@dimen/cm_height_15"
+                android:textColor="@color/font_ff99"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <View style="@style/line_horizontal_1" />
+
+        <RelativeLayout
+            android:id="@+id/rl_versions"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cm_height_50"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="版本号"
+                android:textColor="@color/font_ff33"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@mipmap/ic_jiant"
+                android:drawablePadding="@dimen/cm_height_15"
+                android:textColor="@color/font_ff99"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/tv_Quit"
+        style="@style/tv_submit"
+        android:background="@drawable/exit_app_shep"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/cm_height_50"
+        android:text="安全退出" />
+
+
+</LinearLayout>

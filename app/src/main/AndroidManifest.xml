@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dykj.youfeng">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.hardware.camera.autofocus" /> <!-- 通过WiFi或移动基站的方式获取用户错略的经纬度信息，定位精度大概误差在30~1500米 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 通过GPS芯片接收卫星的定位信息，定位精度达10米以内 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 允许程序访问额外的定位提供者指令 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:name="com.dykj.youfeng.MyApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.dykj.youfeng.mall.activity.EditExpressActivity" />
+        <activity android:name="com.dykj.youfeng.mall.activity.RefundListActivity" />
+        <activity android:name="com.dykj.youfeng.mall.activity.RefundInfoActivity" />
+        <activity android:name="com.dykj.youfeng.mall.activity.RefundApplyActivity" />
+        <activity android:name="com.dykj.youfeng.mall.activity.ExpressInfoActivity" />
+        <activity android:name="com.dykj.youfeng.mall.activity.OrderInfoActivity" />
+        <activity android:name="com.dykj.youfeng.mall.activity.OrderListActivity" />
+        <activity android:name="com.dykj.youfeng.mall.activity.MallPersonActivity" />
+        <activity android:name="com.dykj.youfeng.mall.activity.CarActivity" />
+        <activity android:name="com.dykj.youfeng.mall.activity.PaySuccessActivity" />
+        <activity android:name="com.dykj.youfeng.mall.activity.GoodsInfoActivity" />
+        <activity android:name="com.dykj.youfeng.mall.activity.GoodsListActivity" />
+        <activity android:name="com.dykj.youfeng.mall.activity.MallSearchActivity" />
+        <activity android:name="com.dykj.youfeng.mall.activity.AddAddressActivity" />
+        <activity android:name="com.dykj.youfeng.mall.activity.AddressListActivity" />
+        <activity android:name="com.dykj.youfeng.mall.activity.ConfirmOrderActivity" />
+        <activity android:name="com.dykj.youfeng.start.ForgetPassActivity" />
+        <activity android:name="com.dykj.youfeng.start.RegActivity" />
+        <activity android:name="com.dykj.youfeng.start.LoginActivity" />
+        <activity android:name="com.dykj.youfeng.start.GuidActivity" />
+        <activity android:name="com.dykj.youfeng.mall.activity.MyEvaActivity" />
+        <activity android:name="com.dykj.youfeng.mall.activity.CommitEvaActivity" />
+        <activity android:name="com.dykj.youfeng.mall.activity.GoodsCollectActivity" />
+        <activity android:name="com.dykj.youfeng.MainActivity">
+
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_photo" />
+        </provider>
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="b8f4c174f631cf152acc7b7925193322" />
+
+        <service android:name="com.amap.api.location.APSService" /> <!-- 高德地图 ================== -->
+
+        <activity
+            android:name="com.dykj.youfeng.start.StartActivity"
+            android:theme="@style/AppThemeWelcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dykj.youfeng.home.repayment.activity.RepaymentChannelActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.dykj.youfeng.vip.activity.VipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.repayment.activity.CreditCardMsgActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.baidu.FaceDetectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.repayment.activity.AddCreditCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.repayment.activity.EditCreditCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.repayment.activity.EnactPlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.repayment.activity.PreviewPlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.repayment.activity.ShopInputActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.receipt.activity.QuickReceiptActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.receipt.activity.QuickReceiptLogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.receipt.activity.QuickReceiptLogDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.repayment.activity.RepaymentOneMoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.repayment.activity.OneMoreEnactPlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.repayment.activity.OneMorePreviewPlanActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.dykj.youfeng.share.activity.ShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.repayment.activity.RepaymentPlanActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.dykj.youfeng.home.repayment.activity.PlanDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.kf.KfActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.share.activity.ShareLogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.mine.yue.BalanceActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.dykj.youfeng.mine.integral.IntegralActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.mine.group.MeGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.mine.bank.BankMsgActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.repayment.activity.AddDepositCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.mine.authentication.AuthenticationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+        android:name="com.dykj.youfeng.mine.authentication.AuthenticationStep2Activity"
+        android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.mine.authentication.CustomizedMQConversationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.mine.authentication.AuthenticationStep3Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.dykj.youfeng.home.receipt.activity.HabeiPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.receipt.activity.ImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.mine.deal.DealRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.mine.set.SetingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.mine.set.ChangePhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.mine.set.ChangePswActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.mine.set.SettingDealPswActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.mine.set.ChangeDealPswActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.mine.set.ForGetDealPwsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.mine.set.ResetDealPswActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.mine.msg.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.mine.msg.SystemMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.mine.msg.AnnouncementDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.rank.act.RankActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.sign.act.SignActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.sign.act.SignLogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.up_vip.UpVipActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.dykj.youfeng.mine.yue.cash.TakeOutActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.dykj.youfeng.mine.yue.cash.TakeOutLogActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.dykj.youfeng.mine.set.PersonageMsgActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.dykj.youfeng.mall.activity.ConfirmOrderCarActivity" />
+
+
+        <activity
+            android:name="com.dykj.youfeng.home.receipt.activity.QuickReceiptInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dykj.youfeng.home.receipt.activity.QuickReceiptInfoJftActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.dykj.youfeng.home.receipt.activity.QuickReceiptInfoKjtActivity"
+            android:screenOrientation="portrait" />
+
+
+
+
+        <activity
+            android:name="com.dykj.youfeng.home.receipt.activity.YbShopInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.dykj.youfeng.mine.msg.MessageInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.dykj.youfeng.mine.set.ChangeNickActiivty"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.dykj.youfeng.home.receipt.activity.YbBankListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.dykj.youfeng.home.receipt.activity.CjBankListActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity android:name="com.dykj.youfeng.home.kf.HelpBookActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".mine.set.FaceActivity"
+                android:screenOrientation="portrait"/>
+
+        <activity android:name=".mine.yue.transfer.ConfirmTransferActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".mine.yue.transfer.TransferActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".home.repayment.activity.RepaymentOneActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.dykj.youfeng.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1110556142" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="com.dykj.youfeng.home.repayment.activity.ShopInputJftActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/mSmartRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/tv_card_type"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+        <TextView
+            android:id="@+id/tv_card_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:gravity="center"
+            android:text="添加信用卡"
+            android:textColor="@color/black"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/cred_button_shep"
+            android:paddingBottom="@dimen/cm_height_15"
+                android:paddingTop="@dimen/cm_height_15"
+            android:layout_marginBottom="@dimen/cm_height_25"
+            android:layout_marginLeft="@dimen/cm_height_10"
+            android:layout_marginTop="@dimen/cm_height_10"
+            android:layout_marginRight="@dimen/cm_height_10"
+            />
+
+
+</RelativeLayout>

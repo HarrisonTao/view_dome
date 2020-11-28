@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:src="@mipmap/ic_wuka" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/cm_height_20"
+        android:layout_marginBottom="@dimen/cm_height_100"
+        android:text="您还没有添加信用卡赶快去添加吧"
+        android:textColor="@color/font_ff99" />
+
+
+    <TextView
+        android:id="@+id/tv_add_credit"
+        style="@style/tv_submit"
+        android:text="添加信用卡" />
+
+</LinearLayout>

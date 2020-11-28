@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:padding="@dimen/cm_height_10">
+
+    <ImageView
+        android:id="@+id/iv_type"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_wanc"/>
+
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/cm_height_13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_xf_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消费:￥156.40"
+            android:textColor="@color/font_ff33"
+            android:textSize="14sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_below="@id/tv_xf_money"
+            android:layout_marginTop="@dimen/cm_height_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019-05-01 14:32"
+            android:textColor="@color/font_ff99"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已执行"
+        android:textColor="@color/font_ff33"
+        android:textSize="14sp"/>
+
+</LinearLayout>

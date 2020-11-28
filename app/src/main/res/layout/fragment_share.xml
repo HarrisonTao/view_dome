@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_gallery_outer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_title"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="@dimen/cm_height_27"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="分享"
+            android:textColor="@color/font_ff33"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/tv_share_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:drawableLeft="@mipmap/nav_yqjl"
+            android:drawablePadding="@dimen/cm_height_5"
+            android:text="记录"
+            android:textColor="@color/font_ff33"
+            android:textSize="15sp" />
+
+    </FrameLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_gallery_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fl_title"
+        android:layout_marginLeft="@dimen/cm_height_50"
+        android:layout_marginRight="@dimen/cm_height_50"
+        android:layout_marginBottom="@dimen/cm_height_90"
+        android:layout_weight="1"
+        android:clipChildren="false" />
+
+
+    <TextView
+        android:id="@+id/tv_share"
+        style="@style/tv_submit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/cm_height_30"
+        android:text="分享好友" />
+</RelativeLayout>

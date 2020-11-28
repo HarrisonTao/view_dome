@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/cm_height_10"
+    android:orientation="vertical"
+    android:background="@mipmap/bg1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cm_height_5"
+        android:paddingTop="@dimen/cm_height_10">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/cm_height_10"
+            android:id="@+id/iv_bank_logo"
+            android:layout_width="@dimen/cm_height_30"
+            android:layout_height="@dimen/cm_height_30" />
+
+
+        <TextView
+            android:id="@+id/tv_bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/cm_height_10"
+            android:layout_toRightOf="@id/iv_bank_logo"
+            android:textColor="@color/font_ff33"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_marginTop="@dimen/cm_height_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_bank_name"
+            android:layout_marginLeft="@dimen/cm_height_10"
+            android:layout_toRightOf="@id/iv_bank_logo"
+            android:text="储蓄卡"
+            android:textColor="@color/font_ff33"
+            android:textSize="11sp" />
+
+
+        <TextView
+            android:layout_marginRight="@dimen/cm_height_10"
+            android:gravity="center"
+            android:minWidth="@dimen/cm_height_60"
+            android:padding="@dimen/cm_height_4"
+            android:background="@drawable/shape_round_8dp"
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="删除"
+            android:textSize="12sp"
+            android:textColor="@color/main_color"
+            android:drawableLeft="@mipmap/delete"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_card_number"
+        android:layout_marginTop="@dimen/cm_height_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/cm_height_50"
+        android:textColor="@color/font_ff33"
+        android:textSize="16sp"/>
+</LinearLayout>

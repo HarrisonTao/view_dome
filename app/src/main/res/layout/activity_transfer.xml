@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/cm_height_13">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/tv_15_no_top"
+            android:text="对方账户"
+            android:textSize="13sp" />
+
+
+        <EditText
+            android:id="@+id/userPhoneEdit"
+            android:layout_marginLeft="@dimen/cm_height_26"
+            android:textSize="@dimen/font_size_13"
+            android:textColorHint="#C8C8C8"
+            android:background="@null"
+            android:padding="@dimen/cm_height_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入对方的账户"/>
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/cm_height_13"
+        style="@style/line_horizontal"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/cm_height_13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/tv_15_no_top"
+            android:text="对方姓名"
+            android:textSize="13sp" />
+
+
+        <EditText
+            android:id="@+id/userNameEdit"
+            android:layout_marginLeft="@dimen/cm_height_26"
+            android:textSize="@dimen/font_size_13"
+            android:textColorHint="#C8C8C8"
+            android:background="@null"
+            android:padding="@dimen/cm_height_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入对方的真实姓名"/>
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/cm_height_8"
+        style="@style/line_horizontal"/>
+
+    <TextView
+        android:layout_marginRight="@dimen/cm_height_35"
+        android:layout_marginLeft="@dimen/cm_height_35"
+        app:bl_corners_radius="4dp"
+        app:bl_solid_color="@color/main"
+        android:id="@+id/tv_next"
+        style="@style/tv_submit"
+        android:layout_marginTop="@dimen/cm_height_58"
+        android:text="下一步"
+        tools:ignore="MissingPrefix" />
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_shape">
+
+        <ImageView
+            android:id="@+id/bank_image"
+            android:layout_width="@dimen/cm_height_25"
+            android:layout_height="@dimen/cm_height_25"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="@dimen/cm_height_20"
+            android:layout_marginTop="@dimen/cm_height_16"
+            />
+
+    <TextView
+        android:id="@+id/bank_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/cm_height_14"
+        android:textColor="@color/font_ff33"
+        app:layout_constraintLeft_toRightOf="@+id/bank_image"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/cm_height_20"
+        android:layout_marginLeft="@dimen/cm_height_5"
+
+        />
+
+    <TextView
+        android:id="@+id/bank_type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/cm_height_14"
+        android:textColor="@color/color_A4A5"
+        android:layout_marginTop="@dimen/cm_height_20"
+        android:layout_marginRight="@dimen/cm_height_16"
+        android:text="进行中"
+        />
+
+
+    <TextView
+        android:id="@+id/bank_money_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/cm_height_14"
+        android:textColor="@color/font_ff33"
+        android:textStyle="bold"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bank_image"
+        android:layout_marginLeft="@dimen/cm_height_20"
+        android:layout_marginTop="@dimen/cm_height_22"
+
+        />
+
+
+    <TextView
+        android:id="@+id/save_scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预留额度"
+        android:textSize="@dimen/cm_height_14"
+        android:textColor="@color/color_A4A5"
+        android:layout_marginTop="@dimen/cm_height_11"
+        android:layout_marginLeft="@dimen/cm_height_20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bank_money_text"
+        android:layout_marginBottom="@dimen/cm_height_21"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="bank_money_text,save_scale" />
+
+    <TextView
+        android:id="@+id/bank_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/cm_height_14"
+        android:textColor="@color/font_ff33"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bank_time"
+        app:layout_constraintTop_toBottomOf="@+id/bank_image"
+        app:layout_constraintLeft_toRightOf="@+id/barrier"
+        android:layout_marginLeft="@dimen/cm_height_40"
+        android:layout_marginTop="@dimen/cm_height_22"
+
+        />
+
+    <TextView
+        android:id="@+id/bank_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="还款日"
+        android:textSize="@dimen/cm_height_14"
+        android:textColor="@color/color_A4A5"
+        android:layout_marginTop="@dimen/cm_height_11"
+        android:layout_marginLeft="@dimen/cm_height_40"
+        app:layout_constraintLeft_toRightOf="@+id/barrier"
+        app:layout_constraintTop_toBottomOf="@+id/bank_time_text"
+        android:layout_marginBottom="@dimen/cm_height_21"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/save_scale"
+        />
+
+
+    <TextView
+        android:id="@+id/commitText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看计划"
+        android:textSize="@dimen/cm_height_14"
+        android:textColor="#2359F1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/bank_time"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bank_time"
+        android:gravity="right"
+        android:layout_marginRight="26dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

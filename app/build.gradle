@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.dykj.youfeng"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 11
+        versionName "2.6"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    signingConfigs {
+        config {
+            keyAlias 'dykj426'
+            keyPassword 'dykj426'
+            storeFile file('../youfeng.jks')
+            storePassword 'dykj426'
+            //AF:EC:1C:ED:00:76:08:84:C8:5B:B4:AE:B7:1C:6F:97:2C:C9:06:58
+
+           //MD5: 41:6D:53:2A:89:4B:FB:10:6A:A7:69:A1:8C:40:60:4F
+
+        }
+        debug {
+            keyAlias 'dykj426'
+            keyPassword 'dykj426'
+            storeFile file('../youfeng.jks')
+            storePassword 'dykj426'
+        }
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "youfeng-${variant.versionName}-${variant.versionCode}.apk"
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(path: ':base')
+    implementation project(":facesdk")
+    implementation project(":meiqiasdk")
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    api 'com.jakewharton:butterknife:10.2.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
+
+    api 'com.androidkun:XTabLayout:1.1.3'
+    api 'com.noober.background:core:1.6.0'
+    api 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.3.0'
+    api 'com.github.LRH1993:AutoFlowLayout:1.0.5'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    implementation 'com.github.iwgang:countdownview:2.1.6'
+    // 时间倒计时
+    implementation 'com.haibin:calendarview:3.6.7'
+    // 日历
+    implementation(name: 'alipaySdk-15.6.5-20190718211148', ext: 'aar')
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.4.0'
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'com.lxj:xpopup:1.8.10-x'
+    implementation 'com.amap.api:location:4.6.0'
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+
+
+    implementation 'com.android.support:appcompat-v7:25.1.0'
+    implementation 'androidx.viewpager2:viewpager2:1.1.0-alpha01'
+
+
+}

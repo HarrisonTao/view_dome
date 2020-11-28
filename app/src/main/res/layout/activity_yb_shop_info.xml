@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/cm_height_10"
+        android:text="请上传身份证" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/cm_height_10"
+        android:layout_marginRight="@dimen/cm_height_10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_cardZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@mipmap/shape4"
+                android:scaleType="centerCrop">
+
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/iv_card_1"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/zhengm_bg" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cm_height_25"
+                android:background="@color/main_color"
+                android:gravity="center"
+                android:text="上传身份证正面照片"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/cm_height_16"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_cardF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@mipmap/shape4"
+                android:scaleType="centerCrop">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/iv_card_2"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/zhengm_bg" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cm_height_25"
+                android:background="@color/main_color"
+                android:gravity="center"
+                android:text="上传国徽面"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/cm_height_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/cm_height_10"
+        android:text="请上传储蓄卡" />
+
+    <LinearLayout
+        android:id="@+id/ll_bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/cm_height_10"
+        android:layout_marginRight="@dimen/cm_height_10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_bank1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@mipmap/shape4"
+                android:scaleType="centerCrop">
+
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/iv_bank_1"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/chuxuk_bg" />
+
+            </FrameLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cm_height_25"
+                android:background="@color/main_color"
+                android:gravity="center"
+                android:text="上传银行卡正面"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/cm_height_16"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_bank2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@mipmap/shape4"
+                android:scaleType="centerCrop">
+
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/iv_bank_2"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/hezhao_bg" />
+
+            </FrameLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cm_height_25"
+                android:background="@color/main_color"
+                android:gravity="center"
+                android:text="银行卡身份证上半身合照"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_submit"
+        style="@style/tv_submit"
+        android:layout_marginTop="@dimen/cm_height_90"
+        android:text="提交" />
+
+
+</LinearLayout>

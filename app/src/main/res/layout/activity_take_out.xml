@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--@layout/item_take_out-->
+    <RelativeLayout
+        android:id="@+id/rl_card"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cm_height_100" />
+
+        <LinearLayout
+            android:id="@+id/dot_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cm_height_20"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_add_card"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/bg_color"
+        android:gravity="center"
+        android:text="暂无储蓄卡,添加一张?"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cm_height_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现金额" />
+
+        <TextView
+            android:id="@+id/tv_fee_moey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0.00"
+            android:textColor="@color/color_rad" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/cm_height_10"
+            android:layout_toLeftOf="@id/tv_fee_moey"
+            android:text="手续费：" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cm_height_45"
+        android:layout_margin="@dimen/cm_height_15"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/cm_height_16"
+            android:text="¥"
+            android:textColor="@color/font_ff33"
+            android:textSize="@dimen/font_size_28" />
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/et_money"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/cm_height_15"
+            android:background="@null"
+            android:hint="请输入提现金额"
+            android:inputType="numberDecimal"
+            android:textColorHint="#CCCCCC"
+            android:textSize="@dimen/font_size_20" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_color" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cm_height_10"
+        android:paddingTop="@dimen/cm_height_10">
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户余额" />
+
+        <TextView
+            android:id="@+id/tv_all_cash_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/cm_height_5"
+            android:layout_toRightOf="@id/tv_2"
+            android:textColor="@color/color_rad" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_submit"
+        style="@style/tv_submit"
+        android:text="立即提现" />
+
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cm_height_10"
+        android:textColor="@color/font_ff99"
+        android:textSize="12sp" />
+</LinearLayout>

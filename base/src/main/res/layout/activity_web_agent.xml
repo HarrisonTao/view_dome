@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/straight_white_fill"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:progressBackgroundTint="@color/white"
+        android:progressTint="@color/main_text" />
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/layout_load"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="45dp"
+            android:background="#bb878787"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/zbase_bg_gray_f9"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="7dp">
+
+                <ProgressBar
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content" />
+                <!--<pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/base_load_gif"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"
+                    android:text="加载中..." />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_click"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="75dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rect_stroke_c8">
+            </TextView>
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="0dp"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rect_stroke_c8">
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent"
+                android:layout_width="170dp"
+                android:background="@drawable/rect_stroke_c8">
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="0dp"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:background="@drawable/rect_stroke_c8">
+            </TextView>
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rect_stroke_c8">
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
+
+</LinearLayout>

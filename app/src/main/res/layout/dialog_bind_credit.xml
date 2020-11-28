@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@mipmap/ic_tank">
+
+    <TextView
+        android:layout_marginTop="@dimen/cm_height_50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:text="绑卡提示"
+        android:textColor="@color/font_ff33"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cm_height_20"
+        android:layout_marginTop="@dimen/cm_height_20"
+        android:gravity="center"
+        android:text="首次添加储蓄卡需支付￥10认证费用，请选择是否支付？"
+        android:textColor="@color/font_ff33"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_go_pay"
+        style="@style/tv_submit"
+        android:layout_height="@dimen/cm_height_35"
+        android:text="去支付" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        style="@style/tv_submit"
+        android:layout_height="@dimen/cm_height_35"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="@dimen/cm_height_30"
+        android:background="#C3C3C3"
+        android:text="取消" />
+
+
+</LinearLayout>

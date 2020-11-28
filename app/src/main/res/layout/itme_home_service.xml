@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/cm_height_10"
+    android:layout_marginRight="@dimen/cm_height_10"
+
+    android:background="@drawable/main_shape"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_up"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cm_height_67"
+            android:layout_marginRight="@dimen/cm_height_5"
+            android:layout_weight="1"
+        >
+
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="41dp"
+                android:layout_height="38dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="@dimen/cm_height_14"
+                android:src="@mipmap/ic_huiy" />
+
+            <TextView
+                android:id="@+id/tv_qd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cm_height_10"
+                android:text="会员升级"
+                android:textColor="@color/font_ff33"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/image1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_qd"
+                android:layout_toRightOf="@+id/image1"
+                android:layout_marginTop="@dimen/cm_height_10"
+                android:text="升级享受更多权益"
+                android:textColor="@color/font_ff99"
+                android:textSize="11sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tv_oneMore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/cm_height_5"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="@dimen/cm_height_35"
+                android:layout_height="@dimen/cm_height_35"
+                android:layout_marginLeft="@dimen/cm_height_20"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/cm_height_14"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/ic_yika" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_up"
+                android:layout_marginTop="@dimen/cm_height_10"
+                android:text="查看收益"
+                android:textColor="@color/font_ff99"
+                android:textSize="11sp"
+                android:layout_toRightOf="@+id/image2"/>
+
+            <TextView
+                android:id="@+id/tv_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cm_height_10"
+                android:text="我的钱包"
+                android:textColor="@color/font_ff33"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/image2"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/cm_height_10"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_points"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cm_height_67"
+            android:layout_marginRight="@dimen/cm_height_5"
+            android:layout_weight="1"
+  >
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="@dimen/cm_height_35"
+                android:layout_height="@dimen/cm_height_35"
+                android:layout_marginLeft="@dimen/cm_height_20"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/cm_height_14"
+                android:src="@mipmap/ic_jifen" />
+
+            <TextView
+                android:id="@+id/tv_notebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cm_height_10"
+                android:text="积分明细"
+                android:textColor="@color/font_ff33"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/image3"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_notebook"
+                android:layout_marginTop="@dimen/cm_height_10"
+                android:text="查看积分详情"
+                android:textColor="@color/font_ff99"
+                android:layout_toRightOf="@+id/image3"
+                android:textSize="11sp" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tv_ranking"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cm_height_67"
+            android:layout_marginLeft="@dimen/cm_height_5"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="@dimen/cm_height_35"
+                android:layout_height="@dimen/cm_height_35"
+                android:layout_marginLeft="@dimen/cm_height_20"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/cm_height_14"
+                android:src="@mipmap/ic_paihang" />
+            <TextView
+                android:id="@+id/tv_kf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image4"
+                android:layout_marginTop="@dimen/cm_height_10"
+                android:text="更多精彩"
+                android:textColor="#C8C8C8"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_kf"
+                android:layout_toRightOf="@+id/image4"
+                android:layout_marginTop="@dimen/cm_height_10"
+                android:text="敬请期待"
+                android:textColor="#C8C8C8"
+                android:textSize="11sp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

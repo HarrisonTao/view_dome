@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".start.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/login_bg" />
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/trans_white_selector_mask"
+                android:scaleType="centerInside"
+                android:src="@mipmap/nav_fanh_white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="300dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="43dp"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/dj" />
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/straight_transparent"
+                        android:hint="请输入手机号"
+                        android:inputType="phone"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textColor="@color/font_ff33"
+                        android:textColorHint="#ffc3c3c3"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View style="@style/view_1dp_gray_heng" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="43dp"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/dx" />
+
+                    <EditText
+                        android:id="@+id/et_pass"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/straight_transparent"
+                        android:hint="请输入登录密码"
+                        android:inputType="textPassword"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textColor="@color/font_ff33"
+                        android:textColorHint="#ffc3c3c3"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_forget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:text="忘记密码？"
+                        android:textColor="@color/main_text"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <View style="@style/view_1dp_gray_heng" />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    style="@style/app_bt"
+                    android:text="登录"
+                    android:textColor="#ffffffff"
+                    android:layout_marginTop="54dp"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    android:gravity="center"
+                    android:paddingTop="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="还没有账号，"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#ff333333"
+                        android:paddingBottom="14dp"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tv_reg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/main_text"
+                        android:textSize="13dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

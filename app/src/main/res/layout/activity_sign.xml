@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/cm_height_10">
+
+                    <TextView
+                        android:id="@+id/tv_index"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/cm_height_10"
+                        android:text="1643"
+                        android:textColor="@color/font_ff33"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_index"
+                        android:text="我的积分  |  今日领取"
+                        android:textColor="@color/font_ff99"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_index_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_index"
+                        android:layout_toRightOf="@id/tv_1"
+                        android:text="0积分"
+                        android:textColor="@color/font_ff99"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_use_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/main_color"
+                        android:padding="@dimen/cm_height_7"
+                        android:text="使用积分"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cm_height_10"
+                    android:background="@mipmap/jilu_bg">
+
+                    <TextView
+                        android:id="@+id/tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/cm_height_15"
+                        android:text="本月已签到"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/tv_2"
+                        android:text="9"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/tv_day"
+                        android:text="天"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_sign_log"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/cm_height_10"
+                        android:text="签到记录 > "
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cm_height_10">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/cm_height_20"
+                        android:layout_marginTop="@dimen/cm_height_7"
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2019.01.11"
+                        android:textColor="#6C7085"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        />
+
+                    <com.haibin.calendarview.CalendarView
+                        android:layout_below="@id/tv_time"
+                        android:id="@+id/calendarView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        app:calendar_height="46dp"
+                        app:calendar_padding="10dp"
+                        app:day_text_size="15sp"
+                        app:max_select_range="-1"
+                        app:min_select_range="-1"
+                        app:month_view="com.dykj.youfeng.view.CustomRangeMonthView"
+                        app:month_view_scrollable="false"
+                        app:month_view_show_mode="mode_only_current"
+                        app:select_mode="range_mode"
+                        app:selected_theme_color="#FFC731"
+                        app:week_background="#fff"
+                        app:year_view_day_text_size="9sp"
+                        app:year_view_month_text_size="15sp"
+
+                        app:current_month_text_color="@color/font_ff99"
+                        app:current_day_text_color="@color/font_ff99"
+                        app:selected_text_color="#fff"
+                        app:scheme_theme_color="#128c4b"
+                        app:selected_lunar_text_color="#128c4b"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_sign"
+                style="@style/tv_submit"
+                android:text="立即签到" />
+
+            <TextView
+                style="@style/tv_font_99_size_13"
+                android:layout_margin="@dimen/cm_height_10"
+                android:layout_marginBottom="@dimen/cm_height_30"
+                android:text="@string/sign_explain" />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

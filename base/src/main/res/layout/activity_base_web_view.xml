@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".base.BaseWebViewActivity">
+
+    <RelativeLayout style="@style/top_bar_layout">
+
+        <ImageButton
+            style="@style/top_bar_btn_left"
+            android:onClick="back"
+            android:src="@mipmap/icon_return"
+            tools:ignore="OnClick" />
+
+        <TextView
+            android:ellipsize="end"
+            android:maxLength="10"
+            android:id="@+id/tv_toolbar_title"
+            style="@style/top_bar_title" />
+
+        <View style="@style/line_horizontal.title" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+
+    <WebView
+        android:layout_margin="@dimen/cm_height_10"
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/cm_height_10"
+        android:textColor="@color/font_ff99"
+        android:textSize="@dimen/sp_14"
+        android:visibility="gone" />
+</LinearLayout>

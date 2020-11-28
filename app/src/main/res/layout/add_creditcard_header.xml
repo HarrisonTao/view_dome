@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/cm_height_44">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:padding="@dimen/cm_height_10"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/cm_height_10"
+        android:layout_marginLeft="@dimen/cm_height_10"
+        android:layout_marginRight="@dimen/cm_height_10">
+
+        <TextView
+            android:drawablePadding="@dimen/cm_height_10"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_tianj"
+            android:text="添加信用卡"
+            android:textColor="@color/main_color" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

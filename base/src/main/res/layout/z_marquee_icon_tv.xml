@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/item_iv_icon"
+        android:layout_width="@dimen/cm_height_24"
+        android:layout_height="@dimen/cm_height_24"
+        android:scaleType="fitXY"
+        android:src="@color/main_text"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/item_tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/cm_height_6"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="用户抽奖信息"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_12" />
+</LinearLayout>

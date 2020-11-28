@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/cm_height_6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/credRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/cm_height_10"
+        android:layout_marginTop="@dimen/cm_height_10"
+        android:layout_marginRight="@dimen/cm_height_10"
+
+        android:paddingLeft="@dimen/cm_height_15"
+        android:paddingRight="@dimen/cm_height_15"
+        >
+
+        <ImageView
+            android:id="@+id/iv_bank_logo"
+            android:layout_width="@dimen/cm_height_30"
+            android:layout_height="@dimen/cm_height_30"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/cm_height_20"
+            android:layout_marginBottom="@dimen/cm_height_12"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/cm_height_10"
+            android:layout_toRightOf="@id/iv_bank_logo"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/editCardText"
+            android:layout_marginTop="@dimen/cm_height_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="编辑"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/viewLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/cm_height_10"
+        android:layout_marginRight="@dimen/cm_height_10"
+        android:visibility="gone"
+        >
+    <LinearLayout
+        android:id="@+id/credLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/cm_height_15"
+        android:paddingRight="@dimen/cm_height_15"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="****"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/cm_height_20"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="****"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/cm_height_20"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="****"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:gravity="left"
+                android:layout_marginTop="@dimen/cm_height_20"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_card_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:gravity="left"
+                android:layout_marginTop="@dimen/cm_height_20"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/cm_height_20"
+            android:layout_marginBottom="@dimen/cm_height_20"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#B9D7FF"
+                    android:textSize="14sp"
+                    android:gravity="left"
+                    android:text="总额度"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_card_edu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:gravity="left"
+                   />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#B9D7FF"
+                    android:textSize="14sp"
+                    android:gravity="left"
+                    android:text="账单日"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_card_riqi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:gravity="left"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#B9D7FF"
+                    android:textSize="14sp"
+                    android:gravity="left"
+                    android:text="还款日"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_card_haikri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:gravity="left"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_delete_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="解绑信用卡"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/cred_button_shep"
+        android:layout_marginLeft="@dimen/cm_height_10"
+        android:layout_marginRight="@dimen/cm_height_10"
+        android:layout_marginTop="@dimen/cm_height_25"
+        />
+    </LinearLayout>
+</LinearLayout>

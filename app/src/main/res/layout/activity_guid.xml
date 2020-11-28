@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".start.GuidActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/guide_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.viewpager.widget.ViewPager>
+
+        <RadioGroup
+            android:id="@+id/guideRg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/guideTvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:padding="14dp"
+            android:gravity="end"
+            android:layout_margin="@dimen/cm_height_33"
+            android:text=""
+            android:textColor="@color/main_text"
+            android:visibility="visible"/>
+    </FrameLayout>
+</LinearLayout>

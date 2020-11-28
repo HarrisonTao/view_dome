@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_header"
+        style="@style/act_personage_rl_item"
+        android:layout_height="@dimen/cm_height_64">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="头像" />
+
+        <ImageView
+            android:id="@+id/iv_setting_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_jiant_hui" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_image"
+            android:layout_width="@dimen/cm_height_40"
+            android:layout_height="@dimen/cm_height_40"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/cm_height_7"
+            android:layout_toLeftOf="@+id/iv_setting_header"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/moren_tx"
+            app:riv_border_color="@color/bg_color"
+            app:riv_border_width="1dip"
+            app:riv_oval="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_etnick_name"
+        style="@style/act_personage_rl_item"
+        android:layout_marginTop="@dimen/cm_height_1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="昵称" />
+
+        <TextView
+            android:drawablePadding="@dimen/cm_height_10"
+            android:drawableRight="@mipmap/ic_jiant_hui"
+            android:id="@+id/tv_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/font_ff66" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        style="@style/act_personage_rl_item"
+        android:layout_marginTop="@dimen/cm_height_1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="手机号" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/font_ff66" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        style="@style/act_personage_rl_item"
+        android:layout_marginTop="@dimen/cm_height_10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="姓名" />
+
+        <TextView
+            android:id="@+id/tv_true_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/font_ff66" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_card"
+        style="@style/act_personage_rl_item">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="身份证号" />
+
+        <TextView
+            android:id="@+id/tv_rl_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/font_ff66" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_face"
+        style="@style/act_personage_rl_item"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="人脸识别" />
+
+        <TextView
+            android:text="未认证"
+            android:drawablePadding="@dimen/cm_height_10"
+            android:drawableRight="@mipmap/ic_jiant_hui"
+            android:id="@+id/tv_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/font_ff66" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_call"
+        style="@style/act_personage_rl_item">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="推荐人" />
+
+        <TextView
+            android:id="@+id/tv_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/font_ff66" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout style="@style/act_personage_rl_item">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注册时间" />
+
+        <TextView
+            android:id="@+id/tv_reg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/font_ff66" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

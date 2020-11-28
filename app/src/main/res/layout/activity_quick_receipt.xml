@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background_shape"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cm_height_15"
+                android:background="@drawable/main_shape"
+                >
+
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/cm_height_24"
+                    android:gravity="left"
+                    android:text="收款金额"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="@dimen/font_size_14"
+                    android:textColor="@color/black"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_1"
+                    android:layout_marginTop="@dimen/cm_height_10"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_rmb_res"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="17dp"
+                        android:textSize="30sp" />
+
+
+                    <EditText
+                        android:id="@+id/et_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="0.00"
+
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cm_height_15"
+                android:background="@drawable/main_shape"
+                android:orientation="vertical"
+                >
+
+            <LinearLayout
+                android:id="@+id/ll_credit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cm_height_15"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付信用卡"
+                    android:textColor="@color/font_ff33"
+                    android:textSize="12sp"
+                    android:layout_marginTop="@dimen/cm_height_5"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_credit_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/cm_height_20"
+                    android:visibility="gone">
+
+
+                    <ImageView
+                        android:id="@+id/iv_credit_logo"
+                        android:layout_width="@dimen/cm_height_17"
+                        android:layout_height="@dimen/cm_height_17"
+                        android:layout_marginLeft="@dimen/cm_height_10"
+                        android:src="@mipmap/ic_close" />
+
+                    <TextView
+                        android:id="@+id/iv_credit_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cm_height_10"
+                        android:text="建设银行"
+                        android:textColor="@color/font_ff33"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/iv_credit_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cm_height_10"
+                        android:text="（2036）"
+                        android:textColor="@color/font_ff99"
+                        android:textSize="10sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cm_height_10"
+                        android:drawableRight="@mipmap/btn_jiant_h"
+                        android:drawablePadding="@dimen/cm_height_6"
+                        android:text="更换卡"
+                        android:textColor="@color/font_ff33"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_add_credit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/cm_height_20"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请先去绑定信用卡"
+                        android:textColor="@color/font_ff99"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cm_height_10"
+                        android:drawableRight="@mipmap/btn_jiant_h"
+                        android:drawablePadding="@dimen/cm_height_6"
+                        android:text="绑定卡"
+                        android:textColor="@color/font_ff33"
+                        android:textSize="10sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+                <View
+                    android:layout_height="0.5dp"
+                    android:layout_width="match_parent"
+                    android:background="#E6E6EB"
+                    android:layout_marginLeft="@dimen/cm_height_15"
+                    android:layout_marginRight="@dimen/cm_height_15"
+                    />
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_crad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cm_height_15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/cm_height_5"
+                    android:text="到账储蓄卡"
+                    android:textColor="@color/font_ff33"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_crad_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/cm_height_20"
+                    android:visibility="gone">
+
+
+                    <ImageView
+                        android:id="@+id/iv_crad_logo"
+                        android:layout_width="@dimen/cm_height_17"
+                        android:layout_height="@dimen/cm_height_17"
+                        android:layout_marginLeft="@dimen/cm_height_10"
+                        android:src="@mipmap/ic_close" />
+
+                    <TextView
+                        android:id="@+id/tv_crad_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cm_height_10"
+                        android:text="中国银行"
+                        android:textColor="@color/font_ff33"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_crad_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cm_height_10"
+                        android:text="（2036）"
+                        android:textColor="@color/font_ff99"
+                        android:textSize="10sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cm_height_10"
+                        android:drawableRight="@mipmap/btn_jiant_h"
+                        android:drawablePadding="@dimen/cm_height_6"
+                        android:text="更换卡"
+                        android:textColor="@color/font_ff33"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_add_crad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/cm_height_20"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请先去绑定储蓄卡"
+                        android:textColor="@color/font_ff99"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cm_height_10"
+                        android:drawableRight="@mipmap/btn_jiant_h"
+                        android:drawablePadding="@dimen/cm_height_6"
+                        android:text="绑定卡"
+                        android:textColor="@color/font_ff33"
+                        android:textSize="10sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="true">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/mRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginBottom="@dimen/cm_height_20"
+                android:id="@+id/tv_receipt"
+                style="@style/tv_submit"
+                android:layout_marginTop="@dimen/cm_height_20"
+                android:text="立即收款"
+                android:paddingBottom="@dimen/cm_height_15"
+                android:paddingTop="@dimen/cm_height_15"
+                android:background="@drawable/button_shep"/>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

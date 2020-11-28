@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/cm_height_10"
+    android:layout_margin="@dimen/cm_height_10"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019-05-04 14:32" />
+
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:drawableRight="@mipmap/ic_jiant_hui"
+        android:drawablePadding="@dimen/cm_height_6"
+        android:text="支付成功"
+        android:textColor="@color/main_color" />
+
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_time"
+        android:text="到账金额:￥986.00"
+        android:layout_marginTop="@dimen/cm_height_10"
+        android:textColor="@color/font_ff99" />
+
+    <TextView
+        android:id="@+id/tv_fee_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_money"
+        android:text="手续费:￥14.00"
+        android:layout_marginTop="@dimen/cm_height_8"
+        android:textColor="@color/font_ff99" />
+
+    <TextView
+        android:id="@+id/tv_repayment_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_fee_money"
+        android:text="收款金额:￥1000.00"
+        android:layout_marginTop="@dimen/cm_height_8"
+        android:textColor="@color/font_ff99" />
+</RelativeLayout>

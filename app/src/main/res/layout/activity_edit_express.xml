@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".mall.activity.EditExpressActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物流公司："
+                android:textColor="@color/font_ff33"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_exp_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@mipmap/btn_xjit"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:hint="选择物流公司"
+                android:paddingLeft="20dp"
+                android:textColor="@color/font_ff33"
+                android:textColorHint="#ffc3c3c3"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <View style="@style/line_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物流单号："
+                android:textColor="@color/font_ff33"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/et_exp_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="填写物流单号"
+                android:paddingLeft="20dp"
+                android:textColor="@color/font_ff33"
+                android:textColorHint="#ffc3c3c3"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <View style="@style/line_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系电话："
+                android:textColor="@color/font_ff33"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="填写您的联系电话"
+                android:inputType="phone"
+                android:paddingLeft="20dp"
+                android:textColor="@color/font_ff33"
+                android:textColorHint="#ffc3c3c3"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingTop="14dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:text="上传图片："
+            android:textColor="@color/font_ff33"
+            android:textSize="15dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        style="@style/app_bt"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="12dp"
+        android:text="确定" />
+</LinearLayout>

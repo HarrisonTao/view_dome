@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@mipmap/ic_tank">
+
+    <TextView
+        android:layout_marginTop="@dimen/cm_height_50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="支付方式"
+        android:textColor="@color/font_ff33"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_wx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/cm_height_20"
+        android:layout_marginTop="@dimen/cm_height_20"
+        android:layout_marginRight="@dimen/cm_height_20">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_weixzf"
+            android:drawablePadding="@dimen/cm_height_10"
+            android:text="微信支付" />
+
+        <ImageView
+            android:id="@+id/iv_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_xuanz_s" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/cm_height_10"
+        android:background="@color/bg_color" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_ali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/cm_height_20"
+        android:layout_marginTop="@dimen/cm_height_20"
+        android:layout_marginRight="@dimen/cm_height_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_zfbzf"
+            android:drawablePadding="@dimen/cm_height_10"
+            android:text="支付宝支付" />
+
+        <ImageView
+            android:id="@+id/iv_ali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_xuanz" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/cm_height_10"
+        android:background="@color/bg_color" />
+
+    <RelativeLayout
+        android:id="@+id/rl_yue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/cm_height_20"
+        android:layout_marginTop="@dimen/cm_height_20"
+        android:layout_marginRight="@dimen/cm_height_20">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_yue"
+            android:drawablePadding="@dimen/cm_height_10"
+            android:text="余额支付" />
+
+        <ImageView
+            android:id="@+id/iv_yue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_xuanz" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/cm_height_10"
+        android:background="@color/bg_color" />
+
+    <TextView
+        android:id="@+id/tv_go_pay"
+        style="@style/tv_submit"
+        android:layout_height="@dimen/cm_height_35"
+        android:layout_marginBottom="@dimen/cm_height_20"
+        android:text="去付款" />
+
+</LinearLayout>

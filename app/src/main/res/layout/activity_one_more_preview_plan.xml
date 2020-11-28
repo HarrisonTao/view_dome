@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/cm_height_10">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/cm_height_50">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/cm_height_20">
+
+                <TextView
+                    android:layout_width="@dimen/cm_height_2"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_color" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cm_height_10"
+                    android:text="卡片信息"
+                    android:textColor="@color/font_ff33"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付信用卡："
+                    android:textColor="@color/font_ff99"
+                    android:textSize="13sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="@dimen/cm_height_17"
+                    android:layout_height="@dimen/cm_height_17"
+                    android:layout_marginLeft="@dimen/cm_height_10"
+                    android:src="@mipmap/ic_close" />
+
+
+                <TextView
+                    android:id="@+id/tv_bank_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cm_height_10"
+                    android:textColor="@color/font_ff33"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_bank_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cm_height_10"
+                    android:textColor="@color/font_ff33"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cm_height_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="消费信用卡："
+                    android:textColor="@color/font_ff99"
+                    android:textSize="13sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_repayment_logo"
+                    android:layout_width="@dimen/cm_height_17"
+                    android:layout_height="@dimen/cm_height_17"
+                    android:layout_marginLeft="@dimen/cm_height_10"
+                    android:src="@mipmap/ic_close" />
+
+
+                <TextView
+                    android:id="@+id/iv_repayment_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cm_height_10"
+                    android:textColor="@color/font_ff33"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/iv_repayment_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cm_height_10"
+                    android:textColor="@color/font_ff33"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cm_height_10"
+                android:layout_marginTop="@dimen/cm_height_20"
+                android:background="@color/bg_color" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cm_height_20"
+                android:layout_marginBottom="@dimen/cm_height_20">
+
+                <TextView
+                    android:layout_width="@dimen/cm_height_2"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_color" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cm_height_10"
+                    android:text="计划明细"
+                    android:textColor="@color/font_ff33"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="还款金额："
+                    android:textColor="@color/font_ff99" />
+
+                <TextView
+                    android:id="@+id/tv_repayment_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_1"
+                    android:textColor="@color/main_color" />
+
+
+                <TextView
+                    android:id="@+id/tv_fee_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/font_ff33" />
+
+
+                <TextView
+                    android:id="@+id/tv_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/tv_fee_money"
+                    android:text="还款手续费："
+                    android:textColor="@color/font_ff99" />
+
+
+                <TextView
+                    android:id="@+id/tv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_1"
+                    android:layout_marginTop="@dimen/cm_height_10"
+                    android:text="还款次数费："
+                    android:textColor="@color/font_ff99" />
+
+                <TextView
+                    android:id="@+id/tv_repayment_count_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_repayment_money"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/cm_height_10"
+                    android:layout_toRightOf="@+id/tv_2"
+                    android:textColor="@color/font_ff33" />
+
+
+                <TextView
+                    android:id="@+id/tv_count_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_fee_money"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/cm_height_10"
+                    android:textColor="@color/font_ff33" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_3"
+                    android:layout_marginTop="@dimen/cm_height_10"
+                    android:layout_toLeftOf="@+id/tv_count_money"
+                    android:text="总手续费："
+                    android:textColor="@color/font_ff99" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cm_height_10"
+                android:layout_marginTop="@dimen/cm_height_20"
+                android:background="@color/bg_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/bg_color"
+                    android:nestedScrollingEnabled="false"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cm_height_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/cm_height_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="预留额度："
+            android:textColor="@color/font_ff66"
+            android:textSize="@dimen/font_size_13" />
+
+        <TextView
+            android:id="@+id/tv_count_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/cm_height_70"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/font_size_18" />
+
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/main_color"
+            android:gravity="center"
+            android:text="确认提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_15" />
+
+    </RelativeLayout>
+</RelativeLayout>

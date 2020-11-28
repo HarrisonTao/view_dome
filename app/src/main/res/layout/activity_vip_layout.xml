@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/beijing"
+    >
+
+
+
+        <ImageView
+            android:id="@+id/backText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:src="@mipmap/vip_back_image"
+            android:layout_marginLeft="@dimen/font_size_20"
+            android:layout_marginTop="@dimen/cm_height_30"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_40"
+            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="SSVIP"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/cm_height_30"
+        android:textSize="@dimen/font_size_16"
+        android:gravity="center"
+        />
+
+
+    <ImageView
+        android:id="@+id/vipImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backText"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/vip4"
+        android:layout_marginTop="@dimen/cm_height_50"
+    />
+
+    <TextView
+        android:id="@+id/vipText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开通PLUS会员 享专属特权"
+        android:textSize="@dimen/font_size_16"
+        android:layout_below="@+id/vipImage"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/cm_height_16"
+        android:textColor="#F7ECCB"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/vipRelatice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vipText"
+        android:layout_marginLeft="@dimen/cm_height_25"
+        android:layout_marginRight="@dimen/cm_height_25"
+        android:layout_marginTop="@dimen/font_size_30"
+        >
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/vip_relatice_shep"
+            android:text="- 开通PLUS会员 享专属特权 -"
+            android:paddingTop="@dimen/cm_height_15"
+            android:paddingBottom="@dimen/cm_height_15"
+            android:gravity="center"
+            android:textColor="#BFC3CE"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/titleText"
+            android:background="@drawable/vip_linear_shep"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/cm_height_22"
+                android:layout_marginBottom="@dimen/cm_height_18"
+                android:layout_marginLeft="@dimen/cm_height_20"
+                android:layout_marginRight="@dimen/cm_height_20"
+                >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/huankuanlv"/>
+                <TextView
+                    android:id="@+id/repayText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#BFC4CE"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/cm_height_17"
+                    android:text="智能还款费率 \n小额 0.55%+1.5，大额 0.68%+1.5"/>
+
+            </LinearLayout>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D8D9E7"
+            android:layout_marginLeft="@dimen/cm_height_33"
+            android:layout_marginRight="@dimen/cm_height_33"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/titleText"
+            android:background="@drawable/vip_linear_shep"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/cm_height_18"
+                android:layout_marginBottom="@dimen/cm_height_18"
+                android:layout_marginLeft="@dimen/cm_height_20"
+                android:layout_marginRight="@dimen/cm_height_20"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/shoukuanfeilv"/>
+                <TextView
+                    android:id="@+id/quickRateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#BFC4CE"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/cm_height_17"
+                    android:text="快捷收款费率 \n0.62%+3"/>
+
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D8D9E7"
+                android:layout_marginLeft="@dimen/cm_height_33"
+                android:layout_marginRight="@dimen/cm_height_33"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/cm_height_18"
+                android:layout_marginBottom="@dimen/cm_height_18"
+                android:layout_marginLeft="@dimen/cm_height_20"
+                android:layout_marginRight="@dimen/cm_height_20"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/huiyuan"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#BFC4CE"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/cm_height_17"
+                    android:text="PLUS会员专享24小时专属客服\n随时服务"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+        <Button
+            android:id="@+id/openVipButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/open_vip_button_shep"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/cm_height_30"
+            android:layout_marginLeft="@dimen/cm_height_25"
+            android:layout_marginRight="@dimen/cm_height_25"
+            android:text="立即开通"
+            android:gravity="center"
+            android:paddingBottom="@dimen/cm_height_15"
+            android:paddingTop="@dimen/cm_height_15"
+            />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:background="@mipmap/daili_bg"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_marginTop="@dimen/cm_height_20"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerInside"
+            android:onClick="back"
+            android:src="@mipmap/nav_fanh_white"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="代理排行榜"
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+
+    </RelativeLayout>
+
+    <com.flyco.tablayout.SegmentTabLayout
+        android:layout_centerInParent="true"
+        android:layout_below="@id/rl_title"
+        android:id="@+id/stabLayout"
+        android:layout_width="260dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        app:tl_bar_color="#F8A68A"
+        app:tl_indicator_corner_radius="@dimen/cm_height_25"
+        app:tl_tab_padding="@dimen/cm_height_15"
+        app:tl_indicator_color="@color/white"
+        app:tl_textSelectColor="@color/main_color"
+        />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_below="@id/stabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</RelativeLayout>

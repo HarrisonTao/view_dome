@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- 渐变  36c25f-4ed980  120度-->
+
+    <gradient
+        android:startColor="#F1F4F7"
+        android:endColor="@color/white"
+        android:angle="270"
+        android:type="linear"
+        />
+
+
+
+</shape>

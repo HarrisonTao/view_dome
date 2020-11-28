@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cm_height_10"
+        android:text="请上传身份证正反面图像"
+        android:textSize="16sp" />
+
+    <TextView
+        style="@style/tv_font_99_size_13"
+        android:layout_marginLeft="@dimen/cm_height_10"
+        android:text="1.请确保照片的内容完整并清晰可见,仅支持jpg,png格式"
+        android:textSize="11sp" />
+
+    <TextView
+        style="@style/tv_font_99_size_13"
+        android:layout_marginLeft="@dimen/cm_height_10"
+        android:text="2.请上传彩色图像"
+        android:textSize="11sp" />
+
+
+    <LinearLayout
+        android:padding="@dimen/cm_height_20"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/cm_height_10"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@mipmap/shape4"
+            android:orientation="vertical">
+
+            <ImageView
+                android:scaleType="fitCenter"
+                android:id="@+id/iv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@mipmap/zhengm_bg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cm_height_34"
+                android:background="@color/main_color"
+                android:gravity="center"
+                android:text="上传身份证正面照片"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/cm_height_20"
+            android:id="@+id/ll_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@mipmap/shape4"
+            android:orientation="vertical">
+
+            <ImageView
+                android:scaleType="fitCenter"
+                android:id="@+id/iv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@mipmap/fanm_bg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cm_height_34"
+                android:background="@color/main_color"
+                android:gravity="center"
+                android:text="上传身份证反面照片"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_next"
+        style="@style/tv_submit"
+        android:layout_marginBottom="@dimen/cm_height_20"
+        android:text="下一步" />
+</LinearLayout>

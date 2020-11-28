@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/cm_height_55"
+    android:paddingRight="@dimen/cm_height_55">
+
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@mipmap/pic_quescan">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_header"/>
+
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/pic_lingscan"/>
+    </RelativeLayout>
+
+
+    <View
+        style="@style/line_horizontal"
+        android:layout_marginTop="@dimen/cm_height_65"
+        android:layout_marginBottom="@dimen/cm_height_45" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/shouji"
+            android:drawablePadding="@dimen/cm_height_8"
+            android:gravity="center"
+            android:text="正对手机"
+            android:textColor="#8F8F8F"
+            android:textSize="@dimen/font_size_12" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/guangxian"
+            android:drawablePadding="@dimen/cm_height_8"
+            android:gravity="center"
+            android:text="光线充足"
+            android:textColor="#8F8F8F"
+            android:textSize="@dimen/font_size_12" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/lian"
+            android:drawablePadding="@dimen/cm_height_8"
+            android:gravity="center"
+            android:text="脸无遮挡"
+            android:textColor="#8F8F8F"
+            android:textSize="@dimen/font_size_12" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        style="@style/app_bt"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="12dp"
+        android:text="扫脸确认" />
+
+
+</LinearLayout>

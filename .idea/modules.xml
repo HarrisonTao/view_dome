@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LeisurelyEnjoyment.iml" filepath="$PROJECT_DIR$/LeisurelyEnjoyment.iml" group="LeisurelyEnjoyment" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="LeisurelyEnjoyment/app" />
+      <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" group="LeisurelyEnjoyment/base" />
+      <module fileurl="file://$PROJECT_DIR$/facesdk/facesdk.iml" filepath="$PROJECT_DIR$/facesdk/facesdk.iml" group="LeisurelyEnjoyment/facesdk" />
+      <module fileurl="file://$PROJECT_DIR$/meiqiasdk/meiqiasdk.iml" filepath="$PROJECT_DIR$/meiqiasdk/meiqiasdk.iml" group="LeisurelyEnjoyment/meiqiasdk" />
+    </modules>
+  </component>
+</project>

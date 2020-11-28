@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mall.activity.OrderListActivity">
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:xTabBackgroundColor="@color/white"
+        app:xTabDividerColor="#C3C3C3"
+        app:xTabDividerWidth="0dp"
+        app:xTabIndicatorColor="@color/main"
+        app:xTabIndicatorHeight="1dp"
+        app:xTabDividerWidthWidthText="true"
+        app:xTabDisplayNum="5"
+        app:xTabMode="scrollable"
+        app:xTabSelectedBackgroundColor="@color/white"
+        app:xTabSelectedTextColor="@color/main"
+        app:xTabSelectedTextSize="15dp"
+        app:xTabTextColor="@color/font_ff33"
+        app:xTabTextSelectedBold="false"
+        app:xTabTextSize="15dp">
+
+    </com.androidkun.xtablayout.XTabLayout>
+
+    <View style="@style/view_1dp_gray_heng" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.viewpager.widget.ViewPager>
+</LinearLayout>

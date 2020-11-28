@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cm_height_30"
+        android:layout_marginTop="@dimen/cm_height_10"
+        android:background="@color/white">
+
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="@dimen/cm_height_25"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-10dp"
+            android:background="@mipmap/ic_paihbt"
+            android:padding="@dimen/cm_height_2">
+
+
+            <TextView
+                android:drawablePadding="@dimen/cm_height_5"
+                android:layout_gravity="center"
+                android:id="@+id/tv_select_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/ic_xiala"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

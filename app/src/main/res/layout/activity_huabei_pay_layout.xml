@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".home.receipt.activity.QuickReceiptInfoActivity">
+
+    <!-- android:fitsSystemWindows="true"-->
+    <LinearLayout style="@style/jft_ll_style_common">
+
+        <TextView
+            style="@style/jft_tv_common_left_size"
+            android:text="收款人" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/jft_tv_common_right_size" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/jft_ll_style_common">
+
+        <TextView
+            style="@style/jft_tv_common_left_size"
+            android:text="身份证号" />
+
+        <TextView
+            android:id="@+id/tv_no"
+            style="@style/jft_tv_common_right_size"
+            android:hint="" />
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/jft_ll_style_common">
+
+        <TextView
+            style="@style/jft_tv_common_left_size"
+            android:text="收款金额" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            style="@style/jft_tv_common_right_size"
+            android:hint="收款金额" />
+    </LinearLayout>
+    <LinearLayout style="@style/jft_ll_style_common">
+
+        <TextView
+            style="@style/jft_tv_common_left_size"
+            android:text="手续费" />
+
+        <TextView
+            android:id="@+id/tv_fee_money"
+            style="@style/jft_tv_common_right_size"
+            android:hint="手续费" />
+    </LinearLayout>
+    <LinearLayout style="@style/jft_ll_style_common">
+
+        <TextView
+            style="@style/jft_tv_common_left_size"
+            android:text="储蓄卡号" />
+
+        <TextView
+            android:id="@+id/tv_debit_card"
+            style="@style/jft_tv_common_right_size"
+            android:hint="储蓄卡号" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_city"
+        style="@style/jft_ll_style_common">
+
+        <TextView
+            style="@style/jft_tv_common_left_size"
+            android:text="分期数" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            style="@style/jft_tv_common_right_size"
+            android:hint="请选择分期" />
+        <!--android:drawableRight="@mipmap/请选择"-->
+    </LinearLayout>
+
+    <LinearLayout style="@style/jft_ll_style_common">
+
+        <TextView
+            style="@style/jft_tv_common_left_size"
+            android:text="手机号码" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/jft_tv_common_right_size"
+            android:hint="请输入银行预留手机号码"
+            android:inputType="phone"
+            android:maxLength="11" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/jft_ll_style_common"
+        android:visibility="gone"
+        >
+
+        <TextView
+            style="@style/jft_tv_common_left_size"
+            android:text="验证码" />
+
+        <EditText
+            android:id="@+id/et_code"
+            style="@style/jft_tv_common_right_size"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="请输入短信验证码"
+            android:inputType="number" />
+
+
+        <TextView
+            android:id="@+id/tv_getCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_main_stroke_14"
+            android:paddingLeft="15dp"
+            android:paddingTop="6dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="6dp"
+            android:text="获取验证码"
+            android:textColor="@color/main_text"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        style="@style/tv_submit"
+        android:text="提交" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="@dimen/cm_height_13">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cm_height_30"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="@dimen/cm_height_75"
+            android:layout_height="@dimen/cm_height_75"
+            android:background="@mipmap/icon_header"
+            android:scaleType="fitXY" />
+
+
+        <TextView
+            android:id="@+id/nameText"
+            style="@style/tv_15_no_top"
+            android:layout_marginTop="@dimen/cm_height_10"
+            android:text="李二" />
+
+
+        <TextView
+            android:id="@+id/phoneText"
+            style="@style/tv_15_no_top"
+            android:layout_marginTop="@dimen/cm_height_10"
+            android:text="15501324422"
+            android:textColor="@color/font_ff99"
+            android:textSize="@dimen/font_size_13" />
+    </LinearLayout>
+
+
+    <TextView
+        android:textSize="@dimen/font_size_13"
+        style="@style/tv_15_no_top"
+        android:text="转账金额" />
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/cm_height_10"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <TextView
+            android:id="@+id/tv_rmb_res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textColor="@color/font_ff33"
+            android:textSize="30sp" />
+
+
+        <EditText
+            android:layout_marginLeft="@dimen/cm_height_8"
+            android:textStyle="bold"
+            android:id="@+id/et_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textColor="@color/font_ff99"
+            android:textColorHint="@color/font_ff99"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="43dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/dx" />
+
+        <EditText
+            android:id="@+id/et_sms"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/straight_transparent"
+            android:hint="请输入短信验证码"
+            android:inputType="number"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/font_ff33"
+            android:textColorHint="#ffc3c3c3"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_main_stroke_14"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="3dp"
+            android:text="获取验证码"
+            android:textColor="@color/main_text"
+            android:textSize="11dp" />
+    </LinearLayout>
+    <View
+        android:layout_marginTop="@dimen/cm_height_8"
+        style="@style/line_horizontal"/>
+
+
+    <TextView
+        android:layout_marginRight="@dimen/cm_height_35"
+        android:layout_marginLeft="@dimen/cm_height_35"
+        app:bl_corners_radius="4dp"
+        app:bl_solid_color="@color/main"
+        android:id="@+id/tv_submit"
+        style="@style/tv_submit"
+        android:layout_marginTop="@dimen/cm_height_30"
+        android:text="确认转账"
+        tools:ignore="MissingPrefix" />
+</LinearLayout>

@@ -1,0 +1,182 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.meiqia.meiqiasdk" >
+5
+6    <uses-sdk
+6-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:5:5-52
+7        android:minSdkVersion="10"
+7-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:5:5-52
+8        android:targetSdkVersion="29"
+8-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:5:5-52
+9        tools:overrideLibrary="org.xutils" />
+9-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:5:15-49
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:7:5-65
+11-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:7:22-62
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:8:5-67
+12-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:8:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:9:5-79
+13-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:9:22-76
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:10:5-81
+14-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:10:22-78
+15    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+15-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:11:5-71
+15-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:11:22-68
+16
+17    <application>
+17-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:13:5-97:19
+18
+19        <!-- 聊天界面 -->
+20        <activity
+20-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:16:9-22:70
+21            android:name="com.meiqia.meiqiasdk.activity.MQConversationActivity"
+21-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:17:13-80
+22            android:configChanges="keyboardHidden|orientation"
+22-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:18:13-63
+23            android:launchMode="singleTop"
+23-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:19:13-43
+24            android:screenOrientation="portrait"
+24-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:20:13-49
+25            android:theme="@style/MQTheme"
+25-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:21:13-43
+26            android:windowSoftInputMode="stateHidden|adjustResize" />
+26-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:22:13-67
+27
+28        <!-- 图片查看界面 -->
+29        <activity
+29-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:25:9-31:63
+30            android:name="com.meiqia.meiqiasdk.activity.MQPhotoPreviewActivity"
+30-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:26:13-60
+31            android:configChanges="keyboardHidden|orientation"
+31-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:27:13-63
+32            android:launchMode="singleTop"
+32-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:28:13-43
+33            android:screenOrientation="portrait"
+33-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:29:13-49
+34            android:theme="@style/MQTheme"
+34-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:30:13-43
+35            android:windowSoftInputMode="stateAlwaysHidden" />
+35-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:31:13-60
+36
+37        <!-- 图片选择界面 -->
+38        <activity
+38-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:34:9-40:63
+39            android:name="com.meiqia.meiqiasdk.activity.MQPhotoPickerActivity"
+39-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:35:13-79
+40            android:configChanges="keyboardHidden|orientation"
+40-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:36:13-63
+41            android:launchMode="singleTop"
+41-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:37:13-43
+42            android:screenOrientation="portrait"
+42-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:38:13-49
+43            android:theme="@style/MQTheme"
+43-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:39:13-43
+44            android:windowSoftInputMode="stateAlwaysHidden" />
+44-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:40:13-60
+45        <!-- 图片选择预览界面 -->
+46        <activity
+46-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:42:9-48:63
+47            android:name="com.meiqia.meiqiasdk.activity.MQPhotoPickerPreviewActivity"
+47-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:43:13-86
+48            android:configChanges="keyboardHidden|orientation"
+48-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:44:13-63
+49            android:launchMode="singleTop"
+49-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:45:13-43
+50            android:screenOrientation="portrait"
+50-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:46:13-49
+51            android:theme="@style/MQTheme"
+51-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:47:13-43
+52            android:windowSoftInputMode="stateAlwaysHidden" />
+52-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:48:13-60
+53
+54        <!-- 留言表单界面 -->
+55        <activity
+55-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:51:9-57:70
+56            android:name="com.meiqia.meiqiasdk.activity.MQMessageFormActivity"
+56-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:52:13-59
+57            android:configChanges="keyboardHidden|orientation"
+57-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:53:13-63
+58            android:launchMode="singleTop"
+58-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:54:13-43
+59            android:screenOrientation="portrait"
+59-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:55:13-49
+60            android:theme="@style/MQTheme"
+60-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:56:13-43
+61            android:windowSoftInputMode="stateHidden|adjustResize" />
+61-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:57:13-67
+62
+63        <!-- WebView 界面 -->
+64        <activity
+64-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:60:9-66:70
+65            android:name="com.meiqia.meiqiasdk.activity.MQWebViewActivity"
+65-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:61:13-55
+66            android:configChanges="keyboardHidden|orientation"
+66-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:62:13-63
+67            android:launchMode="singleTop"
+67-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:63:13-43
+68            android:screenOrientation="portrait"
+68-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:64:13-49
+69            android:theme="@style/MQTheme"
+69-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:65:13-43
+70            android:windowSoftInputMode="stateHidden|adjustResize" />
+70-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:66:13-67
+71
+72        <!-- 询前表单 -->
+73        <activity
+73-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:69:9-75:70
+74            android:name="com.meiqia.meiqiasdk.activity.MQInquiryFormActivity"
+74-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:70:13-59
+75            android:configChanges="keyboardHidden|orientation"
+75-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:71:13-63
+76            android:launchMode="singleTop"
+76-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:72:13-43
+77            android:screenOrientation="portrait"
+77-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:73:13-49
+78            android:theme="@style/MQTheme"
+78-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:74:13-43
+79            android:windowSoftInputMode="stateHidden|adjustResize" />
+79-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:75:13-67
+80        <activity
+80-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:77:9-83:70
+81            android:name="com.meiqia.meiqiasdk.activity.MQCollectInfoActivity"
+81-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:78:13-59
+82            android:configChanges="keyboardHidden|orientation"
+82-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:79:13-63
+83            android:launchMode="singleTop"
+83-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:80:13-43
+84            android:screenOrientation="portrait"
+84-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:81:13-49
+85            android:theme="@style/MQTheme"
+85-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:82:13-43
+86            android:windowSoftInputMode="stateHidden|adjustResize" />
+86-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:83:13-67
+87
+88        <service android:name="com.meiqia.core.MeiQiaService" />
+88-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:85:9-65
+88-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:85:18-62
+89
+90        <provider
+90-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:87:9-95:20
+91            android:name="com.meiqia.meiqiasdk.util.MQFileProvider"
+91-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:88:13-48
+92            android:authorities="${applicationId}.fileProvider"
+92-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:89:13-64
+93            android:exported="false"
+93-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:91:13-37
+94            android:grantUriPermissions="true" >
+94-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:90:13-47
+95            <meta-data
+95-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:92:13-94:57
+96                android:name="android.support.FILE_PROVIDER_PATHS"
+96-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:93:17-67
+97                android:resource="@xml/mq_file_paths" />
+97-->E:\优丰Android源码\YoufengCredit_android\meiqiasdk\src\main\AndroidManifest.xml:94:17-54
+98        </provider>
+99    </application>
+100
+101</manifest>

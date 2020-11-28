@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/riv_head"
+            app:riv_oval="true"
+            android:scaleType="centerCrop"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingTop="1dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="木*****A"
+                android:textColor="#ff333333"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="颜色:蓝色  尺码:M"
+                android:textColor="#ff999999"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="2019-06-29"
+            android:textColor="#ff999999"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="12dp"
+        android:text="衣服超级好看，特别舒服，特别柔软，大小合适，穿上非常不
+错，是我想要的，质量很好。"
+        android:textColor="#ff333333"
+        android:textSize="13dp" />
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/btn_tian_h" />
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/btn_tian_h" />
+
+        <ImageView
+            android:id="@+id/iv_3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/btn_tian_h" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF4F4F4"
+            >
+            <ImageView
+                android:id="@+id/iv_goods"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:src="@mipmap/green_bg"
+                android:scaleType="centerCrop"/>
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+                <TextView
+                    android:id="@+id/tv_goods_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:text="情侣装夏装2019夏新品女装连衣裙两件套时尚套
+装男女班服沙滩条纹短袖情侣T恤"
+                    android:textColor="#ff333333"
+                    android:textSize="12dp"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥56.20"
+                    android:textColor="#ff333333"
+                    android:textSize="12dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

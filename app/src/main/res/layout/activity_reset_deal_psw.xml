@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cm_height_50"
+        android:layout_marginTop="@dimen/cm_height_1"
+        android:paddingLeft="@dimen/cm_height_13"
+        android:paddingRight="@dimen/cm_height_13">
+
+        <TextView
+            android:layout_width="@dimen/cm_height_95"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="新交易密码"
+            android:textColor="@color/font_ff33"
+            android:textSize="@dimen/font_size_15" />
+
+        <EditText
+            android:id="@+id/et_new_psw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/cm_height_95"
+            android:layout_toLeftOf="@+id/tv_code"
+            android:background="@null"
+            android:hint="请输入6位数字的交易密码"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:textSize="@dimen/font_size_13" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cm_height_50"
+        android:layout_marginTop="@dimen/cm_height_1"
+        android:paddingLeft="@dimen/cm_height_13"
+        android:paddingRight="@dimen/cm_height_13">
+
+        <TextView
+            android:layout_width="@dimen/cm_height_95"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="确认密码"
+            android:textColor="@color/font_ff33"
+            android:textSize="@dimen/font_size_15" />
+
+        <EditText
+            android:id="@+id/et_next_new_psw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/cm_height_95"
+            android:layout_toLeftOf="@+id/tv_code"
+            android:background="@null"
+            android:hint="请再次输入交易密码"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:textSize="@dimen/font_size_13" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line_horizontal"/>
+
+    <TextView
+        android:background="@color/main_color"
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cm_height_44"
+        android:layout_marginLeft="@dimen/cm_height_15"
+        android:layout_marginTop="@dimen/cm_height_63"
+        android:layout_marginRight="@dimen/cm_height_15"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/font_size_15" />
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/cm_height_20">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:onClick="back"
+            android:scaleType="centerInside"
+            android:src="@mipmap/nav_fanh_white" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="余额"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_header"
+            >
+
+
+            <LinearLayout
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cm_height_20"
+                    android:layout_marginRight="@dimen/cm_height_20"
+                    android:background="@mipmap/yue"
+                    android:padding="@dimen/cm_height_10"
+                    >
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_14"
+                        android:layout_marginTop="@dimen/cm_height_39"
+                        android:text="账户余额"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        />
+                    <TextView
+                        android:id="@+id/tv_accountMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_14"
+                        android:layout_below="@+id/text"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_takeout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/cm_height_10"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/bg_color_ff_shap"
+                        android:gravity="center"
+                        android:minWidth="79dp"
+                        android:paddingLeft="@dimen/cm_height_8"
+                        android:paddingRight="@dimen/cm_height_8"
+                        android:paddingTop="@dimen/cm_height_5"
+                        android:paddingBottom="@dimen/cm_height_5"
+                        android:text="提现"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_transfer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/bg_color_yellow_shap"
+                        android:gravity="center"
+                        android:minWidth="79dp"
+                        android:padding="@dimen/cm_height_4"
+                        android:text="转账"
+                        android:textColor="#EF5B25"
+                        android:visibility="gone"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/cm_height_20"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="今日收益："
+                            android:textColor="#D5DEFF"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_todayMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/cm_height_90"
+                            android:textColor="#D5DEFF"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="总收益："
+                            android:textColor="#D5DEFF"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_all_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#D5DEFF"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/cm_height_20"
+                    >
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="@dimen/cm_height_20"
+                        android:background="#2459F1"
+                        android:layout_gravity="center_vertical"
+                        />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/cm_height_20"
+                            android:paddingBottom="@dimen/cm_height_20"
+                            android:textColor="@color/black"
+                            android:text="收支明细"
+                            android:layout_marginLeft="@dimen/cm_height_10"
+                                android:gravity="center_vertical"
+                            />
+                </LinearLayout>
+                <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                    android:id="@+id/mSmartRefresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:background="@color/white">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/mRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        />
+
+                </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

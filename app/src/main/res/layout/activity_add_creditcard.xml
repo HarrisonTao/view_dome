@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/act_personage_rl_item"
+                android:layout_marginTop="@dimen/cm_height_1">
+
+                <TextView
+                    android:id="@+id/tv_step3_name"
+                    style="@style/tv_15_no_top"
+                    android:text="真实姓名" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cm_height_40"
+                    android:layout_toRightOf="@+id/tv_step3_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/act_personage_rl_item"
+                android:layout_marginTop="@dimen/cm_height_1">
+
+                <TextView
+                    android:id="@+id/tv_step3_user_number"
+                    style="@style/tv_15_no_top"
+                    android:text="身份证号" />
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cm_height_40"
+                    android:layout_toRightOf="@+id/tv_step3_user_number" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                style="@style/act_personage_rl_item"
+                android:layout_marginTop="@dimen/cm_height_1"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/tv_step3_user_car_number"
+                    style="@style/tv_15_no_top"
+                    android:layout_centerVertical="true"
+                    android:text="信用卡号" />
+
+                <EditText
+                    android:id="@+id/et_credit_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/cm_height_45"
+                    android:layout_toRightOf="@+id/tv_step3_user_car_number"
+                    android:background="@null"
+                    android:hint="请输入信用卡卡号"
+                    android:textColorHint="@color/font_ff99"
+                    android:inputType="number"
+                    android:textColor="@color/font_ff66"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_click"
+                    android:layout_width="@dimen/cm_height_50"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/btn_xiangj"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_bank"
+                style="@style/act_personage_rl_item"
+                android:layout_marginTop="@dimen/cm_height_1">
+
+                <TextView
+                    android:id="@+id/tv_step3_bank_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开户行" />
+
+                <TextView
+                    android:layout_marginRight="@dimen/cm_height_10"
+                    android:id="@+id/tv_select_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cm_height_60"
+                    android:layout_toRightOf="@+id/tv_step3_bank_name"
+                    android:drawableRight="@mipmap/btn_xjit"
+                    android:hint="请选择开户行"
+                    android:textColorHint="@color/font_ff99"
+                    android:textColor="@color/font_ff66" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_cvn"
+                style="@style/act_personage_rl_item"
+                android:layout_marginTop="@dimen/cm_height_1">
+
+                <TextView
+                    android:id="@+id/tv_cvn2"
+                    style="@style/tv_15_no_top"
+                    android:text="CVN2" />
+
+                <EditText
+                    android:id="@+id/et_cvn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cm_height_65"
+                    android:layout_toRightOf="@+id/tv_cvn2"
+                    android:background="@null"
+                    android:hint="请输入信用卡背面三位安全码"
+                    android:textColor="@color/font_ff66"
+                    android:textColorHint="@color/font_ff99"
+                    android:textSize="14sp"
+                    android:inputType="phone"
+                    android:maxLength="3"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_time"
+                style="@style/act_personage_rl_item"
+                android:layout_marginTop="@dimen/cm_height_1">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/tv_15_no_top"
+                    android:text="有效期" />
+
+                <TextView
+                    android:layout_marginRight="@dimen/cm_height_10"
+                    android:id="@+id/tv_validity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cm_height_59"
+                    android:layout_toRightOf="@+id/tv_time"
+                    android:drawableRight="@mipmap/btn_xjit"
+                    android:hint="请选择信用卡有效期"
+                    android:textColor="@color/font_ff66"
+                    android:textColorHint="@color/font_ff99" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/act_personage_rl_item"
+                android:layout_marginTop="@dimen/cm_height_1">
+
+                <TextView
+                    android:id="@+id/tv_bill"
+                    style="@style/tv_15_no_top"
+                    android:text="账单日" />
+
+                <TextView
+                    android:layout_marginRight="@dimen/cm_height_10"
+                    android:id="@+id/tv_statement_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cm_height_59"
+                    android:layout_toRightOf="@+id/tv_bill"
+                    android:drawableRight="@mipmap/btn_xjit"
+                    android:hint="请选择账单日"
+                    android:textColor="@color/font_ff66"
+                    android:textColorHint="@color/font_ff99" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/act_personage_rl_item"
+                android:layout_marginTop="@dimen/cm_height_1">
+
+                <TextView
+                    android:id="@+id/tv_haikuan"
+                    style="@style/tv_15_no_top"
+                    android:text="还款日" />
+
+                <TextView
+                    android:layout_marginRight="@dimen/cm_height_10"
+                    android:id="@+id/tv_repayment_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cm_height_59"
+                    android:layout_toRightOf="@+id/tv_haikuan"
+                    android:drawableRight="@mipmap/btn_xjit"
+                    android:hint="请选择还款日"
+                    android:textColor="@color/font_ff66"
+                    android:textColorHint="@color/font_ff99" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_edu"
+                style="@style/act_personage_rl_item"
+                android:layout_marginTop="@dimen/cm_height_1">
+
+                <TextView
+                    android:id="@+id/tv_step3_edu"
+                    style="@style/tv_15_no_top"
+                    android:text="卡片额度" />
+
+                <EditText
+                    android:id="@+id/et_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cm_height_45"
+                    android:layout_toRightOf="@+id/tv_step3_edu"
+                    android:background="@null"
+                    android:hint="请输入卡片额度"
+                    android:inputType="number"
+                    android:textColor="@color/font_ff66"
+                    android:textColorHint="@color/font_ff99"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_phone"
+                style="@style/act_personage_rl_item"
+                android:layout_marginTop="@dimen/cm_height_1">
+
+                <TextView
+                    android:id="@+id/tv_step3_user_phone_number"
+                    style="@style/tv_15_no_top"
+                    android:text="手机号码" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cm_height_45"
+                    android:layout_toRightOf="@+id/tv_step3_user_phone_number"
+                    android:background="@null"
+                    android:hint="请输入银行预留手机号码"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:textColor="@color/font_ff66"
+                    android:textColorHint="@color/font_ff99"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_code"
+                style="@style/act_personage_rl_item"
+                android:layout_marginTop="@dimen/cm_height_1">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tv_step3_user_code"
+                    style="@style/tv_15_no_top"
+                    android:text="验证码" />
+
+                <EditText
+                    android:layout_centerVertical="true"
+                    android:id="@+id/et_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cm_height_59"
+                    android:layout_toRightOf="@+id/tv_step3_user_code"
+                    android:background="@null"
+                    android:hint="请输入短信验证码"
+                    android:inputType="number"
+                    android:textColor="@color/font_ff66"
+                    android:textColorHint="@color/font_ff99"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_getCode"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="3dp"
+                    android:text="获取验证码"
+                    android:textColor="@color/color_2359"
+                    android:textSize="11dp"
+
+                    />
+            </RelativeLayout>
+
+            <Button
+                android:layout_marginBottom="@dimen/cm_height_20"
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cm_height_44"
+                android:layout_marginLeft="@dimen/cm_height_10"
+                android:layout_marginTop="@dimen/cm_height_40"
+                android:layout_marginRight="@dimen/cm_height_10"
+                android:background="@drawable/button_shep"
+                android:text="确定"
+                android:textColor="@color/color_white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

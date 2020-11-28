@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.49@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/811a184ab5da31b08969e27b88d852a8/jetified-BaseRecyclerViewAdapterHelper-2.9.49/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/811a184ab5da31b08969e27b88d852a8/jetified-BaseRecyclerViewAdapterHelper-2.9.49/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/811a184ab5da31b08969e27b88d852a8/jetified-BaseRecyclerViewAdapterHelper-2.9.49/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.CymChad/BaseRecyclerViewAdapterHelper/2.9.49/ef53226ed84afdabb0a78a90ee20a9022295442d/BaseRecyclerViewAdapterHelper-2.9.49-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.CymChad/BaseRecyclerViewAdapterHelper/2.9.49/e8ccf3367245c1151536453691ebd4c547ec1e4/BaseRecyclerViewAdapterHelper-2.9.49-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

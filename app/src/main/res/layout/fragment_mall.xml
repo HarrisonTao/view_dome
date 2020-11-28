@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="@dimen/cm_height_27"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="优丰商城"
+            android:textColor="@color/font_ff33"
+            android:textSize="20dp" />
+
+        <FrameLayout
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginRight="50dp">
+
+            <ImageView
+                android:id="@+id/iv_car"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_gray_selector_mask"
+                android:scaleType="centerInside"
+                android:src="@mipmap/nav_gouc" />
+
+            <TextView
+                android:id="@+id/tv_car_num"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="end|right"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_oval_red"
+                android:gravity="center"
+                android:text=""
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_person"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            android:background="@drawable/white_gray_selector_mask"
+            android:paddingLeft="5dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/nav_geren" />
+    </FrameLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:id="@+id/fl_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    app:bl_corners_radius="2.5dp"
+                    app:bl_solid_color="#FFF6F6F6"
+                    tools:ignore="MissingPrefix">
+
+                    <ImageView
+                        android:id="@+id/iv_search"
+                        android:layout_width="32dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/ic_sous" />
+
+                    <TextView
+                        android:id="@+id/et_key"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="33dp"
+                        android:background="@drawable/straight_transparent"
+                        android:hint="搜索你想要的商品..."
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:textColor="@color/font_ff33"
+                        android:textColorHint="#ffc1c1c1"
+                        android:textSize="14dp" />
+                </FrameLayout>
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="8dp"
+                    app:image_scale_type="center_crop"
+                    app:indicator_height="2dp"
+                    app:indicator_width="8.5dp"
+                    android:layout_margin="6.5dp"
+                    app:indicator_drawable_selected="@mipmap/ic_qieh"
+                    app:indicator_drawable_unselected="@mipmap/ic_qieh1">
+
+                </com.youth.banner.Banner>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="17dp"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="5" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#FFF0F0F0" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/shape_orange" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@mipmap/ic_tese"
+                        android:drawablePadding="5dp"
+                        android:text="特色购"
+                        android:textColor="@color/font_ff33"
+                        android:textSize="16dp" />
+
+                </FrameLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_special"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#FFF0F0F0" />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/shape_blue1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@mipmap/ic_tuij"
+                        android:drawablePadding="5dp"
+                        android:text="今日推荐"
+                        android:textColor="@color/font_ff33"
+                        android:textSize="16dp" />
+
+                </FrameLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="6dp"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="2" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+</LinearLayout>

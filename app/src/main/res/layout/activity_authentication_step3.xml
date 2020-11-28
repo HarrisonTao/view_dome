@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/cm_height_15">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="身份信息"
+        android:textSize="16sp" />
+
+
+    <RelativeLayout
+        style="@style/act_personage_rl_item"
+        android:layout_marginTop="@dimen/cm_height_32"
+        android:background="@drawable/shape_round_color_99_8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="姓名:" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/cm_height_78"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="身份证姓名"
+            android:textColor="@color/font_ff99"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        style="@style/act_personage_rl_item"
+        android:layout_marginTop="@dimen/cm_height_12"
+        android:background="@drawable/shape_round_color_99_8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="身份证号：" />
+
+        <TextView
+            android:id="@+id/tv_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/cm_height_78"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="确认身份证号码"
+            android:textColor="@color/font_ff99"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

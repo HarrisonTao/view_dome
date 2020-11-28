@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_shape"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/cm_height_15"
+    android:paddingRight="@dimen/cm_height_10"
+    android:paddingLeft="@dimen/cm_height_10"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/cm_height_20"
+        >
+
+        <TextView
+            android:id="@+id/tv_channel_name"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通道名称A"
+            android:textColor="@color/font_ff33" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/check_box"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/btn_xuan_small"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/cm_height_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_fl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="费率：0.530%+2.00元/笔"
+            android:textColor="@color/font_ff99"
+            android:textSize="11sp"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交易时间：06:00-18:00"
+            android:textColor="@color/font_ff99"
+            android:textSize="11sp"/>
+
+        <TextView
+            android:id="@+id/tv_edu"
+            android:layout_marginTop="@dimen/cm_height_10"
+            android:layout_below="@id/tv_fl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="额度：单笔限制最低消费500元"
+            android:textColor="@color/font_ff99"
+            android:textSize="11sp"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/cm_height_10"
+            android:layout_below="@id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥0.00"
+            android:textColor="@color/color_2359"
+            android:textSize="11sp"/>
+
+
+        <TextView
+            android:layout_toLeftOf="@id/tv_money"
+            android:layout_marginTop="@dimen/cm_height_10"
+            android:layout_below="@id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="到账金额:"
+            android:textColor="@color/font_ff99"
+            android:textSize="11sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_look_bank"
+            android:textSize="11sp"
+            android:layout_marginTop="@dimen/cm_height_20"
+            android:layout_marginBottom="@dimen/cm_height_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查看支持银行 >"
+            android:textColor="@color/color_2359"
+            android:layout_below="@+id/tv_money"
+            android:layout_alignParentLeft="true"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

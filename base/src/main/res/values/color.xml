@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dialog_color" >#2359F1</color>
+    <color name="main">#2359F1</color>
+    <color name="main_color">#2359F1</color>
+    <color name="main_text">#2359F1</color>
+    <color name="main_color_e0">#2359F1</color>
+    <color name="line">#DDDDDD</color>
+    <color name="gray">#f1f1f1</color>
+    <color name="font_ff99">#999999</color>
+    <color name="font_88">#888888</color>
+    <color name="font_ed">#ededed</color>
+    <color name="trans_20ff">#20ffffff</color>
+    <color name="trans_ff99">#20999999</color>
+    <color name="font_ff33">#333333</color>
+    <color name="font_ff66">#666666</color>
+    <color name="font_c3c3">#C3C3C3</color>
+    <color name="blue">#4990DF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_bg">#FFFFFF</color>
+    <color name="transparent_40">#40111111</color>
+    <color name="transparent_80">#80111111</color>
+    <color name="bg_color">#F0F0F0</color>
+    <color name="horizontal_line_color">#E6E6E6</color>
+    <color name="color_e0">#FFE0E0E0</color>
+    <color name="color_white">#FFFFFFFF</color>
+    <color name="color_bg">#FAFAFA</color>
+    <color name="black">#000000</color>
+    <color name="color_rad">#DD0B0B</color>
+    <color name="color_acafb5">#ACAFB5</color>
+    <color name="transparentWhite00">#00ffffff</color>
+    <color name="transparentWhite40">#40ffffff</color>
+    <color name="transparentBlack40">#40000000</color>
+    <color name="transparentBlack80">#65000000</color>
+    <color name="errorColor">#D50000</color>
+    <color name="infoColor">#3F51B5</color>
+    <color name="successColor">#388E3C</color>
+    <color name="warningColor">#FFA900</color>
+    <color name="normalColor">#353A3E</color>
+    <color name="color_1cceae">#1cceae</color>
+    <color name="color_bd77">#BD9777</color>
+    <color name="color_A4A5">#A4A5B1</color>
+    <color name="color_A4A5B2">#A4A5B2</color>
+    <color name="color_3434">#343434</color>
+    <color name="color_F3F3">#F3F3F3</color>
+    <color name="color_2359">#2359F1</color>
+    <color name="color_F1F4">#F1F4F7</color>
+    <color name="color_FFEE6CC">#FFFEE6CC</color>
+
+</resources>

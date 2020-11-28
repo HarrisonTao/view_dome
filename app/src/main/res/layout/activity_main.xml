@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#FFDDDDDD" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/rb_mall"
+            style="@style/RadioGroupButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/tab_mall_radio"
+            android:text="商城"
+            android:visibility="gone"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/RadioGroupButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/tab_card_radio"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_share"
+            style="@style/RadioGroupButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/tab_share_radio"
+            android:visibility="gone"
+            android:text="分享" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            style="@style/RadioGroupButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/tab_mine_radio"
+            android:text="我的" />
+    </RadioGroup>
+</LinearLayout>

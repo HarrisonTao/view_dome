@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@color/white">
+
+
+
+    <FrameLayout
+        android:layout_width="25dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="20dp"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <View
+                android:id="@+id/v_line_top"
+                android:layout_width="0.5dp"
+                android:layout_height="6dp"
+                android:background="@color/font_ff99"
+                android:layerType="software"/>
+            <View
+                android:id="@+id/v_line_bottom"
+                android:layout_marginTop="6dp"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/font_ff99"
+                android:layerType="software"/>
+        </LinearLayout>
+
+            <View
+                android:id="@+id/v_status"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_oval_99"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="6dp"
+                android:layout_height="6dp"/>
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="深圳转运中心 发往 广州运转中心"
+            android:textColor="#FFB3B3B3"
+            android:textSize="12dp"
+            />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="26dp"
+            android:text="2019-07-24 14:32:20"
+            android:textColor="#ff999999"
+            android:textSize="11dp"
+            />
+    </LinearLayout>
+</LinearLayout>

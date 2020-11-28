@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dykj.youfeng.view.CustomLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:background="@color/main_color">
+
+        <View
+            android:id="@+id/viewStatusBar"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/viewStatusBar">
+
+            <ImageView
+                android:id="@+id/iv_left"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:onClick="back"
+                android:scaleType="centerInside"
+                android:src="@mipmap/nav_fanh_white" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="在线客服"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/cm_height_10"
+            android:layout_marginRight="@dimen/cm_height_10"
+            android:layout_marginBottom="@dimen/cm_height_28"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/wxkfText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/hineText"
+
+                    android:text="微信客服"
+                    android:layout_marginRight="@dimen/cm_height_8"
+                    android:background="@drawable/wx_kf_shaep"
+                    android:padding="@dimen/cm_height_8"
+                    android:textColor="#D4DDFF" />
+
+                <TextView
+                    android:id="@+id/hineText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+
+                    android:text="有问题找我，随时为您解决问题"
+                    android:textColor="#D4DDFF" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/cm_height_10"
+            android:layout_marginRight="70dp"
+            android:layout_weight="1"
+            android:background="#F6F6F6"
+            android:drawableLeft="@mipmap/ic_import"
+            android:drawablePadding="@dimen/cm_height_4"
+            android:gravity="center_vertical"
+            android:hint="请输入问题编号"
+            android:inputType="number"
+            android:paddingLeft="12dp"
+            android:paddingTop="5dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="5dp"
+            android:textColor="#666666"
+            android:textColorHint="#ffcccccc"
+            android:textSize="12sp" />
+
+
+        <View
+            android:layout_width="@dimen/cm_height_10"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:id="@+id/iv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/cm_height_10"
+            android:background="@drawable/straight_maincolor_fill_8"
+            android:gravity="center"
+            android:minWidth="@dimen/cm_height_65"
+            android:text="发送"
+            android:textColor="@color/color_white"
+            android:textSize="15sp" />
+    </LinearLayout>
+</com.dykj.youfeng.view.CustomLinearLayout>

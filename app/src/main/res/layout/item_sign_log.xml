@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cm_height_45"
+    android:background="@color/white"
+    android:padding="@dimen/cm_height_8"
+    android:layout_marginTop="@dimen/cm_height_5"
+    android:layout_marginLeft="@dimen/cm_height_10"
+    android:layout_marginRight="@dimen/cm_height_10"
+    >
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/tv_integral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
